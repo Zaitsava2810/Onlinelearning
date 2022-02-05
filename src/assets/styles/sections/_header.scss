@@ -1,0 +1,41 @@
+header {
+  margin: 35px 0 35px 0;
+}
+
+.header__content {
+  @include customFlex;
+  align-items: center;
+}
+
+.header__title {
+  @include text(700, normal, 24px, 31px, $black);
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav__item {
+  margin-left: 62px;
+}
+
+.nav__inner {
+  margin-left: 112px;
+}
+
+.nav__link {
+  @include text(400, normal, 16px, 24px, $black);
+}
+
+.nav__link:hover {
+  color: $blue;
+}
+
+.nav__btn {
+  @include text(400, normal, 16px, 24px, $white);
+  padding: 12px 24px;
+  background: $blue;
+  border-radius: 4px;
+}

@@ -1,0 +1,13 @@
+@mixin text($fw, $style, $fs, $lh, $clr) {
+  font-weight: $fw;
+  font-style: $style;
+  font-size: $fs;
+  line-height: $lh;
+  color: $clr;
+}
+
+@mixin customFlex() {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -11,3 +11,21 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+@mixin baseProperties($dis, $fd, $jc, $ai) {
+  display: $dis;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin frame($pad, $bckgr, $br) {
+  padding: $pad;
+  background: $bckgr;
+  border-radius: $br;
+}
+
+@mixin parameters($wi, $hei) {
+  width: $wi;
+  height: $hei;
+}

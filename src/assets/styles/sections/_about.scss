@@ -1,0 +1,36 @@
+.about {
+  margin-top: 224px;
+}
+
+.about__section {
+  @include customFlex;
+}
+
+.about__content {
+  width: 519px;
+  margin-right: 38px;
+}
+
+.about__title {
+  @include text(700, normal, 48px, 62px, $black);
+}
+
+.about__subtitle {
+  @include text(400, normal, 16px, 24px, $gray);
+  margin-top: 24px;
+}
+
+.about__text {
+  @include text(400, normal, 20px, 28px, $darkgray);
+  margin-top: 16px;
+}
+
+.about__btn {
+  @include text(500, normal, 16px, 24px, $white);
+  @include frame(16px 32px, $blue, 4px);
+  margin-top: 32px;
+}
+
+.img__about {
+  @include parameters(595px, 433px);
+}

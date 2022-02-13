@@ -1,0 +1,48 @@
+.courses__section {
+  padding: 60px 0;
+  background: $lightblue;
+}
+
+.courses {
+  @include baseProperties(flex, column, none, center);
+}
+
+.courses__content {
+  width: 674px;
+}
+
+.courses__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 30px;
+}
+
+.courses__item {
+  @include parameters(368px, 483px);
+  @include frame(24px, $white, none);
+}
+
+.line {
+  @include parameters(320px, 1px);
+  background-color: $lightgray;
+  margin-top: 24px;
+}
+
+.text__content {
+  @include baseProperties(flex, row, space-between, center);
+}
+
+.courses__text {
+  @include text(400, normal, 13px, 21px, $gray);
+}
+
+.price {
+  @include text(700, normal, 24px, 31px, $blue);
+}
+
+.courses__btn {
+  @include text(400, normal, 16px, 24px, $white);
+  @include frame(16px 32px, $blue, 6px);
+  margin-top: 48px;
+}

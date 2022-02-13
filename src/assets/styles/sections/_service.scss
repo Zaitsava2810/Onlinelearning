@@ -1,0 +1,39 @@
+.section {
+  @include baseProperties(flex, column, none, center);
+  margin-bottom: 128px;
+}
+
+.section__content {
+  width: 423px;
+  text-align: center;
+}
+
+.section__title {
+  @include text(700, normal, 48px, 62px, $black);
+  margin-bottom: 12px;
+}
+
+.section__subtitle {
+  @include text(400, normal, 16px, 24px, $gray);
+  margin-bottom: 48px;
+}
+
+.service__cards {
+  width: 1152px;
+  @include customFlex;
+}
+
+.service__item {
+  @include parameters(248px, 217px);
+  @include baseProperties(flex, column, none, center);
+  text-align: center;
+}
+
+.item__title {
+  @include text(700, normal, 24px, 31px, $black);
+  margin: 27px 0 16px 0;
+}
+
+.item__text {
+  @include text(400, normal, 14px, 21px, $gray);
+}
